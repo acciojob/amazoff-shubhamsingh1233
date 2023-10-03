@@ -96,6 +96,7 @@ public class OrderController {
         countOfOrders = orderService.getCountOfUnassignedOrders();
         //Count of orders that have not been assigned to any DeliveryPartner
 
+
         return new ResponseEntity<>(countOfOrders, HttpStatus.CREATED);
 
     }
